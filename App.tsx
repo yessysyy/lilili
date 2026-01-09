@@ -95,10 +95,10 @@ const LoginScreen = ({ onLogin, judges }: { onLogin: (user: AuthUser) => void; j
 
   const handleLogin = () => {
     if (selectedRole === 'admin') {
-      if (pin === '11998') {
+      if (pin === '1198') {
         onLogin({ id: 'admin-1', name: 'Super Admin', role: 'admin' });
       } else {
-        setError('PIN Admin salah (11998)');
+        setError('PIN Admin salah');
       }
     } else {
       const judge = judges.find(j => j.id === selectedJudgeId);
